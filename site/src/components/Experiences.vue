@@ -4,7 +4,7 @@
         <div class="xp-block">
             <div class="card-xp">
                 <div class="card-xp-content">
-                    <h6>2021 - Loading Desenvlvimento Jr.<br><em>Diretor Presidente</em></h6>
+                    <h6>2021 - Loading Desenvolvimento Jr.<br><em>Diretor Presidente</em></h6>
                     <p>
                         Atuando nos aspecto mais gerencial, como gerenciamento de processos de negócios (BPM) e desenvolvimento e estudo de novos produtos e serviços para o mercado local, além do exercício da liderança e gerenciamento de pessoas bem como aspectos legais no quesito jurídico e contábil relacionados a uma empresa júnior.
                     </p>
@@ -20,7 +20,7 @@
             </div>
             <div class="card-xp">
                 <div class="card-xp-content">
-                    <h6>2020 - Loading Desenvlvimento Jr.<br><em>Diretor de Projetos</em></h6>
+                    <h6>2020 - Loading Desenvolvimento Jr.<br><em>Diretor de Projetos</em></h6>
                     <p>
                         Atuando como scrum master nas equipes de desenvolvedores para implementar soluções web para clientes externos e no desenvolvimento de produtos internos, além de ser responsável pelos testes, deploys e revisões de código.
                     </p>
@@ -28,7 +28,7 @@
             </div>
             <div class="card-xp">
                 <div class="card-xp-content">
-                    <h6>2018 e 2019 - Loading Desenvlvimento Jr.<br><em>Desenvolvedor Web</em></h6>
+                    <h6>2018 e 2019 - Loading Desenvolvimento Jr.<br><em>Desenvolvedor Web</em></h6>
                     <p>
                         Experiência no desenvolvimento de sites simples de conteúdo estático, e dinâmico com o 
                         auxilio de frameworks.
