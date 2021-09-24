@@ -2,6 +2,17 @@
   <div class="central-menu">
     <img class="img-profile" src="./assets/pp.jpg" alt="Pedro Gomes">
     <h1>Pedro Gomes</h1>
+    <div class="social-box">
+      <a href="https://www.instagram.com/pedro_gomes.1/">
+        <fa :icon="['fab','instagram']" size="2x"/>
+      </a>
+      <a href="https://www.linkedin.com/in/pedrogomesmoura/">
+        <fa :icon="['fab','linkedin']" size="2x"/>
+      </a>
+      <a href="https://github.com/pedynho">
+        <fa :icon="['fab','github']" size="2x"/>
+      </a>
+    </div>
     <div class="row"></div> 
   </div>
   <div class="menu-items">
@@ -12,25 +23,31 @@
     </div> 
   </div>
   <card v-if="selected == 1">
-    <p>Graduando em Eng. de Computação pela UFC campus Sobral.</p>
+    <about>
+    </about>
   </card>
   <card v-if="selected == 2">
-    <teste>
-    </teste>
+    <stacks>
+    </stacks>
   </card>
   <card v-if="selected == 3">
-    <p>E lá vamos nós inventar o que num precisa neh.</p>
+    <experiences>
+    </experiences>
   </card>
 </template>
 
 <script>
 import Card from './components/Card.vue';
-import Teste from './components/Teste.vue';
+import Stacks from './components/Stacks.vue';
+import Experiences from './components/Experiences.vue';
+import About from './components/About.vue'
 export default {
   name: 'Home',
   components: {
     Card,
-    Teste
+    About,
+    Stacks,
+    Experiences
   },
   data(){
     return {
@@ -53,7 +70,7 @@ h1{
 }
 .row{
   background-color: lightgray;
-  width: 15rem;
+  width: 30rem;
   height: 2px;
   margin-bottom: 1rem;
 }
@@ -62,6 +79,9 @@ h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.central-menu h1{
+  margin: 0;
 }
 .menu-items{
   display: flex;
@@ -82,17 +102,28 @@ h1{
 .item-selected{
   background-color: rgb(197, 231, 231);
 }
+.social-box{
+  justify-content: space-between;
+  padding: 1em;
+}
+.social-box a{
+  color: black;
+  cursor: pointer;
+  margin: 5px;
+}
 @media screen and (max-width: 500px) {
-  .items {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-start;
+  .items span{
+    font-size: 1.1rem;
     margin-left: 1rem;
-    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
   }
   .item-selected{
-    background-color: #fff;
-    color: rgb(0, 212, 240);
+    background-color: rgb(197, 231, 231);
+  }
+  .row{
+    width: 20rem;
   }
 }
 </style>
