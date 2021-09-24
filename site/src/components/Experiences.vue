@@ -107,6 +107,10 @@ export default {
     margin: 0;
     font-size: 0.8rem;
 }
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
 .tags span{
     font-size: 0.8rem;
     padding: 5px;
