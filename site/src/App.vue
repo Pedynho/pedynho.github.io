@@ -18,7 +18,7 @@
   <div class="menu-items">
     <div class="items">
       <span @click="selected = 1" :class="{'item-selected':selected == 1}">Sobre</span>
-      <span @click="selected = 2" :class="{'item-selected':selected == 2}">Stacks</span>    
+      <span @click="selected = 2" :class="{'item-selected':selected == 2}">Projetos</span>    
       <span @click="selected = 3" :class="{'item-selected':selected == 3}">Experiências</span>
     </div> 
   </div>
@@ -27,8 +27,8 @@
     </about>
   </card>
   <card v-if="selected == 2">
-    <stacks>
-    </stacks>
+    <projects>
+    </projects>
   </card>
   <card v-if="selected == 3">
     <experiences>
@@ -38,7 +38,7 @@
 
 <script>
 import Card from './components/Card.vue';
-import Stacks from './components/Stacks.vue';
+import Projects from './components/Projects.vue';
 import Experiences from './components/Experiences.vue';
 import About from './components/About.vue'
 export default {
@@ -46,7 +46,7 @@ export default {
   components: {
     Card,
     About,
-    Stacks,
+    Projects,
     Experiences
   },
   data(){
@@ -64,6 +64,7 @@ export default {
 .img-profile {
   border-radius: 50%;
   max-width: 7rem;
+  border: 1px solid gray;
 }
 h1{
   font-size: 1.6rem;
@@ -96,31 +97,34 @@ h1{
   font-size: 1.5rem;
   margin-left: 1rem;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px 5px 0px 0px;
   cursor: pointer;
 }
 .item-selected{
-  background-color: rgb(197, 231, 231);
+  background-color: var(--background-menu);
 }
 .social-box{
   justify-content: space-between;
   padding: 1em;
 }
+.social-box svg{
+    color: var(--color-icons);
+}
 .social-box a{
-  color: black;
+  color: var(--font-color);
   cursor: pointer;
   margin: 5px;
 }
 @media screen and (max-width: 500px) {
   .items span{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     margin-left: 1rem;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px 5px 0px 0px;
     cursor: pointer;
   }
   .item-selected{
-    background-color: rgb(197, 231, 231);
+    background-color: var(--background-menu);
   }
   .row{
     width: 20rem;

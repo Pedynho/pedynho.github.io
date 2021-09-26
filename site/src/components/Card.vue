@@ -15,12 +15,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
 }
 .card-content{
     width: 500px;
-    background-color: rgb(197, 231, 231);
+    background-color: var(--background-menu);
     padding: 2em;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 @media screen and (max-width: 500px) {
   .card-content{

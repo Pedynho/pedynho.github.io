@@ -82,14 +82,14 @@ export default {
 .time-line {
     display: block;
     width: 10px;
-    background-color: gray;
+    background-color: var(--background);
 }
 .xp-block{
     width: 100%;
 }
 .card-xp{
     width: 100%;
-    background-color: lightsteelblue;
+    background-color: var(--background-card);
     text-align: left;
     margin-bottom: 10px;
 }
@@ -97,7 +97,7 @@ export default {
     padding: 1rem;
 }
 .card-xp-content a{
-    color: black;
+    color: var(--font-color);
     text-decoration: none;
 }
 .card-xp p{

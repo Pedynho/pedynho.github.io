@@ -1,0 +1,13 @@
+:root{
+    --background: #d8d8d8;
+    --color-icons: #2d669d;
+    --background-card: #ededed;
+    --background-menu: #a4d2ff;
+    --font-color: #292d2e;
+}
+body{
+    background-color: var(--background);
+}
+svg{
+    color: var(--color-icons);
+}

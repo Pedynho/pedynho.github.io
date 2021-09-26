@@ -30,8 +30,16 @@ export default {
     display: flex;
     flex-direction: column;
     font-size: 1.1em;
+    padding: 1rem;
+    border: 1px solid black;
+    background-color: var(--background-card);
 }
 .about-me span{
     padding: 5px;
+}
+@media screen and (max-width: 500px) {
+    .about-me {
+        font-size: 0.8em;
+    }
 }
 </style>
